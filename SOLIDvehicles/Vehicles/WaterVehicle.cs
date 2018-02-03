@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SOLIDvehicles.Vehicles
 {
@@ -20,7 +16,7 @@ namespace SOLIDvehicles.Vehicles
 
         public void Drive()
         {
-            Console.WriteLine("The jetski zips through the waves with the greatest of ease");
+            Console.WriteLine("Vehicle is driving.");
         }
 
         public void Fly()
@@ -30,7 +26,7 @@ namespace SOLIDvehicles.Vehicles
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Starting vehicle.");
         }
 
         public void Stop()

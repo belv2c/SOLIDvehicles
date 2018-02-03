@@ -77,9 +77,29 @@ namespace SOLIDvehicles
             waterVehicles.Add(jetski);
             waterVehicles.Add(yacht);
 
-            // With a single `foreach`, have each vehicle Fly()
             // With a single `foreach`, have each water vehicle Drive()
+            foreach (var waterThing in waterVehicles)
+            {
+                waterThing.Start();
+                waterThing.Drive();
+            }
+
+            
+            // With a single `foreach`, have each vehicle Fly()
+            foreach(var airThing in airVehicles)
+            {
+                airThing.Start();
+                airThing.Fly();
+            }
+
+
             // With a single `foreach`, have each road vehicle Drive()
+            foreach(var landThing in landVehicles)
+            {
+                landThing.Start();
+                landThing.Drive();
+            }
+            Console.ReadLine();
         }
     }
 }

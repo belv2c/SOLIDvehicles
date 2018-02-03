@@ -25,12 +25,12 @@ namespace SOLIDvehicles.Vehicles
 
         public void Fly()
         {
-            Console.WriteLine("");
+            Console.WriteLine("Vehicle is flying.");
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Starting vehicle.");
         }
 
         public void Stop()
