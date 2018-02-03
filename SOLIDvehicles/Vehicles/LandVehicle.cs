@@ -20,17 +20,17 @@ namespace SOLIDvehicles.Vehicles
 
         public void Drive()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Vehicle is driving.");
         }
 
         public void Fly()
         {
-            Console.WriteLine("");
+            throw new NotImplementedException();
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Starting vehicle.");
         }
 
         public void Stop()
