@@ -11,7 +11,7 @@ namespace SOLIDvehicles
     {
         static void Main(string[] args)
         {
-            var airplane = new Airplane
+            var airplane = new AirVehicle
             {
                 Wheels = 10,
                 Doors = 9,
@@ -20,7 +20,7 @@ namespace SOLIDvehicles
                 MaxAirSpeed = 500
             };
 
-            var cessna = new Cessna
+            var cessna = new AirVehicle
             {
                 Wheels = 3,
                 Doors = 3,
@@ -30,14 +30,14 @@ namespace SOLIDvehicles
                 MaxWaterSpeed = 200
             };
 
-            var motorcycle = new Motorcycle
+            var motorcycle = new LandVehicle
             {
                 Wheels = 2,
                 PassengerCapacity = 2,
                 MaxLandSpeed = 150,
             };
 
-            var bus = new Bus
+            var bus = new LandVehicle
             {
                 Wheels = 6,
                 Doors = 4,
@@ -46,13 +46,13 @@ namespace SOLIDvehicles
                 TransmissionType = "automatic",
             };
 
-            var jetski = new JetSki
+            var jetski = new WaterVehicle
             {
                 PassengerCapacity = 2,
                 MaxWaterSpeed = 60,
             };
 
-            var yacht = new Yacht
+            var yacht = new WaterVehicle
             {
                 Doors = 25,
                 PassengerCapacity = 100,
@@ -63,11 +63,23 @@ namespace SOLIDvehicles
 
 
             // Build a collection of all vehicles that operate on water
-            // Build a collection of all vehicles that operate on roads
+            var airVehicles = new List<AirVehicle>();
+            airVehicles.Add(airplane);
+            airVehicles.Add(cessna);
+
+            // Build a collection of all vehicles that operate on roads  
+            var landVehicles = new List<LandVehicle>();
+            landVehicles.Add(motorcycle);
+            landVehicles.Add(bus);
+
             // Build a collection of all vehicles that fly
+            var waterVehicles = new List<WaterVehicle>();
+            waterVehicles.Add(jetski);
+            waterVehicles.Add(yacht);
+
             // With a single `foreach`, have each vehicle Fly()
-            // With a single `foreach`, have each road vehicle Drive()
             // With a single `foreach`, have each water vehicle Drive()
+            // With a single `foreach`, have each road vehicle Drive()
         }
     }
 }
