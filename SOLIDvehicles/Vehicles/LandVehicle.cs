@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLIDvehicles.Vehicles
 {
-    public class Airplane : IVehicle
+    public class LandVehicle : IVehicle
     {
-        public int Wheels { get; set; } = 10;
+        public int Wheels { get; set; } = 3;
         public int Doors { get; set; } = 3;
         public int PassengerCapacity { get; set; } = 113;
         public bool Winged { get; set; } = true;
